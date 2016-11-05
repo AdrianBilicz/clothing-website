@@ -533,4 +533,4 @@ figcaption {
         transition: all 0.3s ease-in-out; }
         .large-window .window-tint .promo-text .window-cta:hover {
           background: white;
-          color: black; }
+          color: #000; }
