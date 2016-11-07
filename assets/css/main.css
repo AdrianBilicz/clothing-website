@@ -534,3 +534,22 @@ figcaption {
         .large-window .window-tint .promo-text .window-cta:hover {
           background: white;
           color: #000; }
+
+.blog-posts {
+  margin-top: 100px; }
+  .blog-posts figure {
+    padding: 5px; }
+    .blog-posts figure .post {
+      border: 1px solid #e1e1e1;
+      padding: 10px;
+      background: white;
+      position: relative; }
+    .blog-posts figure .post-1 {
+      -webkit-transform: translate(100px, 20px);
+              transform: translate(100px, 20px);
+      background: white; }
+    .blog-posts figure .post-2 {
+      z-index: 2; }
+    .blog-posts figure .post-3 {
+      -webkit-transform: translate(-100px, 20px);
+              transform: translate(-100px, 20px); }
