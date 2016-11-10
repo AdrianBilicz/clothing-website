@@ -418,7 +418,8 @@ header {
   background-size: auto 600px;
   background-attachment: fixed;
   background-position: top center;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2; }
 
 .logo {
   height: 100px;
@@ -452,10 +453,15 @@ header {
   margin-left: -480px; }
 
 .content {
-  text-align: center;
-  width: 800px;
-  margin: 0 auto;
-  padding: 50px; }
+  z-index: 2;
+  position: relative;
+  background: white;
+  margin-bottom: 230px; }
+  .content article {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px; }
 
 /* Grid */
 .clothes-pics {
@@ -553,3 +559,17 @@ figcaption {
     .blog-posts figure .post-3 {
       -webkit-transform: translate(-100px, 20px);
               transform: translate(-100px, 20px); }
+
+/* footer */
+footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer .footer-stuff {
+    max-width: 640px;
+    margin: 0 auto; }
+  footer a {
+    color: white; }
