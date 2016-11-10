@@ -27,8 +27,19 @@ $(window).scroll(function(){
 
 		if(wScroll > $('.large-window').offset().top-$(window).height()){
 			$('.large-window').css('background-position', 'center '+wScroll - $('.large-window').offset().top+'px')
+
+			var opacity = (wScroll - $('.large-window').offset().top + 400)/(wScroll/10)
+			$('.window-tint').css('opacity',  opacity )
 		}
-		var opacity = (wScroll - $('.large-window').offset().top)
-		$('window-tint').css('opacity', opacity)
+		
 	}
+
+	if(wScroll > $('.blog-posts').offset().top-$(window).height()){
+
+		var offset = Math.min(0, wScroll - $('.blog-posts').offset().top + $(window).height()-350)
+			$('.post-1').css('transform','translate('+ offset +'px, 20px)');
+
+		var offset = Math.min(0, wScroll - $('.blog-posts').offset().top + $(window).height()-350)
+			$('.post-3').css('transform','translate('+ Math.abs(offset) +'px, 20px)');
+		}
 })
